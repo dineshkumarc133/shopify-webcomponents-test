@@ -1,5 +1,5 @@
 
-
+{% assign product = collections.all.products.first %}
 <div class="product-card-container">
   <product-card 
     data-image="{{ product.featured_image | img_url: 'medium' }}" 
