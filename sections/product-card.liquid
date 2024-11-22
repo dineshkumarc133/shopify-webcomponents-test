@@ -1,0 +1,9 @@
+
+
+<div class="product-card-container">
+  <product-card 
+    data-image="{{ product.featured_image | img_url: 'medium' }}" 
+    data-title="{{ product.title }}" 
+    data-price="{{ product.price | money }}">
+  </product-card>
+</div>
