@@ -1,4 +1,3 @@
-// frontend/web/product-card/scripts/main.js
 
 class ProductCard extends HTMLElement {
     constructor() {
