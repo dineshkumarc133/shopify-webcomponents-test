@@ -23,11 +23,11 @@ class ProductCard extends HTMLElement {
     cardWrapper.appendChild(productTitle);
     cardWrapper.appendChild(productPrice);
 
-    // Create and append link for stylesheet
-    const linkElem = document.createElement('link');
-    linkElem.setAttribute('rel', 'stylesheet');
-    linkElem.setAttribute('href', '/assets/main.scss');
-    shadow.appendChild(linkElem);
+ // Create and append link for stylesheet
+const linkElem = document.createElement('link');
+linkElem.setAttribute('rel', 'stylesheet');
+linkElem.setAttribute('href', '/assets/main.scss'); 
+shadow.appendChild(linkElem);
 
     // Append wrapper to shadow root
     shadow.appendChild(cardWrapper);
