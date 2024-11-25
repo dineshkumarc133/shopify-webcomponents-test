@@ -23,13 +23,14 @@ class ProductCard extends HTMLElement {
     cardWrapper.appendChild(productTitle);
     cardWrapper.appendChild(productPrice);
 
+    // Create and append link for stylesheet
+    const linkElem = document.createElement('link');
+    linkElem.setAttribute('rel', 'stylesheet');
+    linkElem.setAttribute('href', '/cdn/shop/t/6/assets/main.scss');
+    shadow.appendChild(linkElem);
+
     // Append wrapper to shadow root
     shadow.appendChild(cardWrapper);
-    const linkElem = document.createElement('link');
-linkElem.setAttribute('rel', 'stylesheet');
-linkElem.setAttribute('href', '/cdn/shop/t/6/assets/main.scss');
-
-shadow.appendChild(linkElem);
   }
 }
 
