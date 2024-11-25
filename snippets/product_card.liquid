@@ -1,0 +1,16 @@
+<div class="product-slider">
+  {% assign collection_handle = section.settings.product_collection %}
+  {% assign selected_collection = collections[collection_handle] %}
+
+  {% if selected_collection %}
+    {% for product in selected_collection.products %}
+      <product-card 
+        data-image="{{ product.featured_image | img_url: 'medium' }}" 
+        data-title="{{ product.title }}" 
+        data-price="{{ product.price | money }}">
+      </product-card>
+    {% endfor %}
+  {% else %}
+    <p>No products found in this collection.</p>
+  {% endif %}
+</div>

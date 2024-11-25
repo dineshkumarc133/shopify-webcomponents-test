@@ -1,9 +1,15 @@
-<div class="product-slider">
-  {% for product in collections.all.products %}
-    <product-card 
-      data-image="{{ product.featured_image | img_url: 'medium' }}" 
-      data-title="{{ product.title }}" 
-      data-price="{{ product.price | money }}">
-    </product-card>
-  {% endfor %}
-</div>
+{% render 'produc_card' %}
+
+{% schema %}
+{
+  "name": "Product card",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "product_collection",
+      "label": "Select a collection",
+      "default": "all"
+    }
+  ]
+}
+{% endschema %}
