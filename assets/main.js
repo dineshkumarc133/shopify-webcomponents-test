@@ -23,10 +23,10 @@ class ProductCard extends HTMLElement {
     cardWrapper.appendChild(productTitle);
     cardWrapper.appendChild(productPrice);
 
-// Create and append link for compiled stylesheet (CSS)
+// Create and append link for compiled stylesheet 
 const linkElem = document.createElement('link');
 linkElem.setAttribute('rel', 'stylesheet');
-linkElem.setAttribute('href', '/cdn/shop/t/6/assets/main.js'); // Use compiled CSS file
+linkElem.setAttribute('href', '/cdn/shop/t/6/assets/main.js');
 shadow.appendChild(linkElem);
 
 
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
             slidesToScroll: 1,
           }
         }
-      ]
+      ] 
     });
   }
 });
