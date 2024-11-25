@@ -27,7 +27,7 @@ class ProductCard extends HTMLElement {
     shadow.appendChild(cardWrapper);
     const linkElem = document.createElement('link');
 linkElem.setAttribute('rel', 'stylesheet');
-linkElem.setAttribute('href', 'main.scss');
+linkElem.setAttribute('href', '/cdn/shop/t/6/assets/main.scss');
 
 shadow.appendChild(linkElem);
   }
