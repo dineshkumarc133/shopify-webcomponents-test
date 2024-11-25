@@ -1,9 +1,9 @@
-
-{% assign product = collections.all.products.first %}
-<div class="product-card-container">
-  <product-card 
-    data-image="{{ product.featured_image | img_url: 'medium' }}" 
-    data-title="{{ product.title }}" 
-    data-price="{{ product.price | money }}">
-  </product-card>
-</div>  
+<div class="product-slider">
+  {% for product in collections.all.products %}
+    <product-card 
+      data-image="{{ product.featured_image | img_url: 'medium' }}" 
+      data-title="{{ product.title }}" 
+      data-price="{{ product.price | money }}">
+    </product-card>
+  {% endfor %}
+</div>
