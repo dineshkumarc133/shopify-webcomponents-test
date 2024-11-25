@@ -26,7 +26,7 @@ class ProductCard extends HTMLElement {
  // Create and append link for stylesheet
 const linkElem = document.createElement('link');
 linkElem.setAttribute('rel', 'stylesheet');
-linkElem.setAttribute('href', '/assets/main.scss'); 
+linkElem.setAttribute('href', 'main.scss'); 
 shadow.appendChild(linkElem);
 
     // Append wrapper to shadow root
