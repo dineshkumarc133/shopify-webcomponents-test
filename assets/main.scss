@@ -5,6 +5,7 @@
     text-align: center;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   display:none;
   }
   
   .product-card img {
@@ -24,6 +25,9 @@
     margin: 5px 0;
     font-weight: bold;
   }
+
+
+
   
   /* Responsive Design */
   @media (max-width: 768px) {
