@@ -1,48 +1,58 @@
-// frontend/web/product-card/styles/main.scss
+// Variables (Optional: Define reusable colors, padding, and other values)
+$border-color: #ddd;
+$background-color: #fff;
+$box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+$text-color: #333;
+$font-size-h3: 1.2em;
+$font-size-p: 1.1em;
+$font-size-h3-mobile: 1em;
+$font-size-p-mobile: 1em;
 
-/* Scoped styles for product card */
+// Product Card Styles
 .product-card {
-    border: 1px solid #ddd;
-    padding: 15px;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .product-card img {
+  border: 1px solid $border-color;
+  padding: 15px;
+  text-align: center;
+  background-color: $background-color;
+  box-shadow: $box-shadow;
+  display: none !important;
+
+  // Image styling
+  img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
   }
-  
-  .product-card h3 {
-    font-size: 1.2em;
+
+  // Title styling
+  h3 {
+    font-size: $font-size-h3;
     margin: 10px 0;
   }
-  
-  .product-card p {
-    color: #333;
-    font-size: 1.1em;
+
+  // Price styling
+  p {
+    color: $text-color;
+    font-size: $font-size-p;
     margin: 5px 0;
     font-weight: bold;
   }
-  
-  /* Responsive Design */
+
+  // Responsive Design
   @media (max-width: 768px) {
-    .product-card {
-      width: 100%;
-    }
-    .product-card img {
+    width: 100%;
+    
+    img {
       max-height: 180px;
     }
   }
-  
+
   @media (max-width: 480px) {
-    .product-card h3 {
-      font-size: 1em;
+    h3 {
+      font-size: $font-size-h3-mobile;
     }
-    .product-card p {
-      font-size: 1em;
+    p {
+      font-size: $font-size-p-mobile;
     }
   }
-  
+}
