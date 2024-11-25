@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 6527521dd450e07c7cb693b275b608890a15c1e2
 class ProductCard extends HTMLElement {
   constructor() {
     super();
