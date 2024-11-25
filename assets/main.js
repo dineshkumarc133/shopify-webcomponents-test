@@ -26,7 +26,7 @@ class ProductCard extends HTMLElement {
 // Create and append link for compiled stylesheet (CSS)
 const linkElem = document.createElement('link');
 linkElem.setAttribute('rel', 'stylesheet');
-linkElem.setAttribute('href', 'main.css'); // Use compiled CSS file
+linkElem.setAttribute('href', '/cdn/shop/t/6/assets/main.js'); // Use compiled CSS file
 shadow.appendChild(linkElem);
 
 
