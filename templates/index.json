@@ -78,7 +78,9 @@
     },
     "product_card": {
       "type": "product-card",
-      "settings": {}
+      "settings": {
+        "product_collection": "frontpage"
+      }
     }
   },
   "order": [
